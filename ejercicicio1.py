@@ -37,17 +37,42 @@
 
 # Escribir un programa que cree un diccionario vacío y lo vaya completando con información sobre una persona (por ejemplo, nombre, edad, teléfono, correo electrónico, etc.) que se le solicite al usuario. Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
 
-personas = []
-informacion = {}
-num_personas = int(input("Ingrese el numero de personas que desea agregar: "))
+# personas = []
 
-contador = 0
+# num_personas = int(input("Ingrese el numero de personas que desea agregar: "))
 
-while contador <= num_personas:
-    print(f"Ingresando el alumno N° {contador}")
+# contador = 1
 
-    nombre = input("Ingrese el nombre de la persona: ")
-    edad = int(input("Ingrese la edad de la persona: "))
-    telefono = int(input("Ingrese el telefono de la persona: "))
-    correo = input("Ingrese el correo de la persona: ")
-    
+# while contador <= num_personas:
+#     print(f"Ingresando la persona N° {contador}")
+
+#     nombre = input("Ingrese el nombre de la persona: ")
+#     edad = int(input("Ingrese la edad de la persona: "))
+#     telefono = int(input("Ingrese el telefono de la persona: "))
+#     correo = input("Ingrese el correo de la persona: ")
+
+#     informacion = {}
+
+#     informacion ['nombre'] = nombre
+#     informacion ['edad'] = edad
+#     informacion ['telefono'] = telefono
+#     informacion ['correo'] = correo
+
+#     personas.append(informacion)
+#     contador +=1
+
+#     for pers in personas:
+#         print(f"Agregaste a la persona N° {contador} detalle: {pers}")
+
+# Desarrolle un programa que almacene en una lista los números del 1 al 10 y los muestre por pantalla en orden inverso separados por comas.
+
+# numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# for nums in reversed(numeros):
+#     print(nums)
+
+# Cree un programa que almacene el abecedario en una lista, elimine de la lista las letras que ocupen posiciones múltiplos de 3, y muestre por pantalla la lista resultante.
+# 6. Investigue sobre el uso de la función list(), una vez comprendido su funcionamiento escriba un programa que solicite al usuario una palabra y muestre por pantalla si es un palíndromo.
+# EJERCICIOS COMPLEMENTARIOS
+# 1. Realice un programa que almacene en una lista los números de la serie Fibonacci (0, 1, 1, 2, 3, 5, 8, etc.) generados hasta un numero introducido por el usuario. Por ejemplo, si un usuario ingresa 10, la serie solo mostrara los valores 0, 1, 1, 2, 3, 5 y 8.
+# 2. Escribir un programa que pregunte por una muestra de números, separados por comas, los guarde en una lista y muestre por pantalla su media y desviación típica.
