@@ -72,6 +72,19 @@
 #     print(nums)
 
 # Cree un programa que almacene el abecedario en una lista, elimine de la lista las letras que ocupen posiciones múltiplos de 3, y muestre por pantalla la lista resultante.
+
+lista_abecedario = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+new_list= []
+
+for abc  in range(len(lista_abecedario) ):
+    if abc % 3 != 0:
+        
+        new_list.append(lista_abecedario[abc])
+print(f"El abecedario sin las posiciones que son multiplos de 3: {new_list}")
+    
+
+
 # 6. Investigue sobre el uso de la función list(), una vez comprendido su funcionamiento escriba un programa que solicite al usuario una palabra y muestre por pantalla si es un palíndromo.
 # EJERCICIOS COMPLEMENTARIOS
 # 1. Realice un programa que almacene en una lista los números de la serie Fibonacci (0, 1, 1, 2, 3, 5, 8, etc.) generados hasta un numero introducido por el usuario. Por ejemplo, si un usuario ingresa 10, la serie solo mostrara los valores 0, 1, 1, 2, 3, 5 y 8.
