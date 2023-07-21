@@ -86,9 +86,20 @@
 
 #  6. Investigue sobre el uso de la función list(), una vez comprendido su funcionamiento escriba un programa que solicite al usuario una palabra y muestre por pantalla si es un palíndromo.
 
+palabra = input("Ingrese una palabra para verificar si es palindromo: ")
+palabra = palabra.strip().lower()
+
+new_list = list(palabra)
+reversed_list = list(new_list)
+reversed_list.reverse()
+
+
+if new_list == reversed_list:
+    print(f"{palabra} es un palindromo")
+else:
+    print(f"{palabra} no es un palindromo")
+ 
 
 
 
-# EJERCICIOS COMPLEMENTARIOS
-# 1. Realice un programa que almacene en una lista los números de la serie Fibonacci (0, 1, 1, 2, 3, 5, 8, etc.) generados hasta un numero introducido por el usuario. Por ejemplo, si un usuario ingresa 10, la serie solo mostrara los valores 0, 1, 1, 2, 3, 5 y 8.
-# 2. Escribir un programa que pregunte por una muestra de números, separados por comas, los guarde en una lista y muestre por pantalla su media y desviación típica.
+
