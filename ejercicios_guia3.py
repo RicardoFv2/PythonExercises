@@ -87,5 +87,30 @@
 # except Exception as e:
 #         raise ValueError("Error: El valor ingresado no es numérico.")
 
+# 6. Realice un programa con una función que calcule el factorial de un número ingresado por el usuario. El factorial de un número n se define como el producto de todos los enteros positivos desde 1 hasta n. Asegúrese de manejar cualquier error que pueda surgir si el usuario ingresa un número negativo o no entero.
 
+def calcular_factorial(numero):
+    try:
+        numero_entero = int(numero)
+        if numero_entero < 0:
+            raise ValueError("El número no puede ser negativo.")
+        factorial = 1
+        for i in range(1, numero_entero + 1):
+            factorial *= i
+        return factorial
+    except ValueError as error:
+        raise ValueError("Error: " + str(error))
+    except Exception as e:
+        raise ValueError("Error: El valor ingresado no es un número entero.")
+    except ZeroDivisionError:
+        print("No se puede con 0")
+
+while True:
+    numero_ingresado = input("Ingresa un número entero para calcular su factorial: ")
+    try:
+        resultado_factorial = calcular_factorial(numero_ingresado)
+        print(f"El factorial de: {numero_ingresado} es: {resultado_factorial}")
+        break
+    except ValueError as error:
+        print(error)
 
