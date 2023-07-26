@@ -94,23 +94,22 @@ def calcular_factorial(numero):
         numero_entero = int(numero)
         if numero_entero < 0:
             raise ValueError("El número no puede ser negativo.")
-        factorial = 1
-        for i in range(1, numero_entero + 1):
-            factorial *= i
-        return factorial
+        if numero_entero == 0:
+            return 1
+        else:
+            return numero_entero * calcular_factorial(numero_entero - 1)
     except ValueError as error:
         raise ValueError("Error: " + str(error))
     except Exception as e:
         raise ValueError("Error: El valor ingresado no es un número entero.")
-    except ZeroDivisionError:
-        print("No se puede con 0")
 
 while True:
     numero_ingresado = input("Ingresa un número entero para calcular su factorial: ")
     try:
         resultado_factorial = calcular_factorial(numero_ingresado)
-        print(f"El factorial de: {numero_ingresado} es: {resultado_factorial}")
+        print(f"El factorial de {numero_ingresado} es: {resultado_factorial}")
         break
     except ValueError as error:
         print(error)
+
 
